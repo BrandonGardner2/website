@@ -1,13 +1,13 @@
 <?php
 
-	$emailTo = "brandon.gardner2@outlook.com"; // Enter your email for feedbacks here
+	$emailTo = "brandon.gardner2@outlook.com";
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=utf-8\r\n";
 	$headers .= "From: ".$_POST['email']."\r\n";
 
 	if (!isset($_POST['subject'])) {
-		$subject = "Gardner.dev contact form"; // Enter your subject here
+		$subject = "Gardner.dev contact form";
 	} else {
 		$subject = $_POST['subject'];
 	}
