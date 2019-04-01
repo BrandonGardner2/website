@@ -44,14 +44,17 @@ function submitForm(e, formName) {
     data: formData,
     success: function() {
       alert("Thanks for your message! I will reply as soon as possible.");
-      document.querySelector(".js-field-name").textContent = "";
-      document.querySelector(".js-field-email").textContent = "";
-      document.querySelector(".js-field-message").textContent = "";
+      document.querySelector(".js-field-name").value = "";
+      document.querySelector(".js-field-email").value = "";
+      document.querySelector(".js-field-message").value = "";
     },
     error: function() {
       alert(
         "Something went wrong, please email me directly: brandon.gardner2@outlook.com"
       );
+      document.querySelector(".js-field-name").value = "";
+      document.querySelector(".js-field-email").value = "";
+      document.querySelector(".js-field-message").value = "";
     }
   });
 }

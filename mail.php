@@ -4,7 +4,7 @@
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=utf-8\r\n";
-	$headers .= "From: no-reply@gardnerdev.com" "\r\n";
+	$headers .= "From: no-reply@gardnerdev.com". "\r\n";
 	$headers .= "Reply-To: ".$_POST['email']. "\r\n";
 
 	if (!isset($_POST['subject'])) {
