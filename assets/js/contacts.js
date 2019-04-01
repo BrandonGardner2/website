@@ -43,12 +43,15 @@ function submitForm(e, formName) {
     url: "mail.php",
     data: formData,
     success: function() {
-      console.log("success");
-      //...
+      alert("Thanks for your message! I will reply as soon as possible.");
+      document.querySelector(".js-field-name").textContent = "";
+      document.querySelector(".js-field-email").textContent = "";
+      document.querySelector(".js-field-message").textContent = "";
     },
     error: function() {
-      console.log("error");
-      //...
+      alert(
+        "Something went wrong, please email me directly: brandon.gardner2@outlook.com"
+      );
     }
   });
 }
