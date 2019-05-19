@@ -1,8 +1,8 @@
-.resume-list{
+.resume-list {
   margin-top: 30px;
   margin-bottom: 30px;
 
-  .resume-list_title{
+  .resume-list_title {
     font-family: $font-family-title;
     font-size: $font-size-t5;
     line-height: $line-height-t5;
@@ -13,16 +13,20 @@
     margin-bottom: 40px;
   }
 
-  .resume-list__block{
+  .resume-list__block {
     border-left: 2px solid $color-accent;
     padding-left: 25px;
     padding-bottom: 50px;
 
-    p{
+    ul {
+      list-style: inside;
+    }
+
+    p {
       margin: 0;
     }
 
-    &:before{
+    &:before {
       width: 12px;
       height: 12px;
       border: 2px solid $color-accent;
@@ -33,12 +37,12 @@
       left: 10px;
     }
 
-    &:last-child{
+    &:last-child {
       padding-bottom: 0;
     }
   }
 
-  .resume-list__block-title{
+  .resume-list__block-title {
     text-transform: uppercase;
     color: $color-accent;
     font-size: $font-size-t5;
@@ -48,7 +52,7 @@
     padding-bottom: 5px;
   }
 
-  .resume-list__block-date{
+  .resume-list__block-date {
     font-family: $font-family-additional;
     font-size: $font-size-t5;
     line-height: $line-height-t5;
